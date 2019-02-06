@@ -80,7 +80,7 @@ class CNode {
     CAddress me(CService("0.0.0.0"));
     BeginMessage("version");
     int nBestHeight = GetRequireHeight();
-    string ver = "/sparks-seeder:0.12.3/";
+    string ver = "/sparks-seeder:0.12.3.4/";
     vSend << PROTOCOL_VERSION << nLocalServices << nTime << you << me << nLocalNonce << ver << nBestHeight;
     EndMessage();
   }
@@ -298,7 +298,7 @@ bool TestNode(const CService &cip, int &ban, int &clientV, std::string &clientSV
 
 /*
 int main(void) {
-  CService ip("sparkscoin.io", 8890, true);
+  CService ip("sparkspay.io", 8890, true);
   vector<CAddress> vAddr;
   vAddr.clear();
   int ban = 0;
